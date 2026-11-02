@@ -1,0 +1,346 @@
+[
+  {
+    "id": 1,
+    "name": "Warrior",
+    "colorHex": "C69B6D",
+    "icon": "classicon_warrior",
+    "specs": [
+      {
+        "id": 71,
+        "name": "Arms",
+        "role": "dps",
+        "icon": "ability_warrior_savageblow"
+      },
+      {
+        "id": 72,
+        "name": "Fury",
+        "role": "dps",
+        "icon": "ability_warrior_innerrage"
+      },
+      {
+        "id": 73,
+        "name": "Protection",
+        "role": "tank",
+        "icon": "ability_warrior_defensivestance"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Paladin",
+    "colorHex": "F48CBA",
+    "icon": "classicon_paladin",
+    "specs": [
+      {
+        "id": 65,
+        "name": "Holy",
+        "role": "healer",
+        "icon": "spell_holy_holybolt"
+      },
+      {
+        "id": 66,
+        "name": "Protection",
+        "role": "tank",
+        "icon": "ability_paladin_shieldofthetemplar"
+      },
+      {
+        "id": 70,
+        "name": "Retribution",
+        "role": "dps",
+        "icon": "spell_holy_auraoflight"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hunter",
+    "colorHex": "AAD372",
+    "icon": "classicon_hunter",
+    "specs": [
+      {
+        "id": 253,
+        "name": "Beast Mastery",
+        "role": "dps",
+        "icon": "ability_hunter_bestialdiscipline"
+      },
+      {
+        "id": 254,
+        "name": "Marksmanship",
+        "role": "dps",
+        "icon": "ability_hunter_focusedaim"
+      },
+      {
+        "id": 255,
+        "name": "Survival",
+        "role": "dps",
+        "icon": "ability_hunter_camouflage"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Rogue",
+    "colorHex": "FFF468",
+    "icon": "classicon_rogue",
+    "specs": [
+      {
+        "id": 259,
+        "name": "Assassination",
+        "role": "dps",
+        "icon": "ability_rogue_deadlybrew"
+      },
+      {
+        "id": 260,
+        "name": "Outlaw",
+        "role": "dps",
+        "icon": "ability_rogue_waylay"
+      },
+      {
+        "id": 261,
+        "name": "Subtlety",
+        "role": "dps",
+        "icon": "ability_stealth"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Priest",
+    "colorHex": "FFFFFF",
+    "icon": "classicon_priest",
+    "specs": [
+      {
+        "id": 256,
+        "name": "Discipline",
+        "role": "healer",
+        "icon": "spell_holy_powerwordshield"
+      },
+      {
+        "id": 257,
+        "name": "Holy",
+        "role": "healer",
+        "icon": "spell_holy_guardianspirit"
+      },
+      {
+        "id": 258,
+        "name": "Shadow",
+        "role": "dps",
+        "icon": "spell_shadow_shadowwordpain"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Death Knight",
+    "colorHex": "C41E3A",
+    "icon": "classicon_deathknight",
+    "specs": [
+      {
+        "id": 250,
+        "name": "Blood",
+        "role": "tank",
+        "icon": "spell_deathknight_bloodpresence"
+      },
+      {
+        "id": 251,
+        "name": "Frost",
+        "role": "dps",
+        "icon": "spell_deathknight_frostpresence"
+      },
+      {
+        "id": 252,
+        "name": "Unholy",
+        "role": "dps",
+        "icon": "spell_deathknight_unholypresence"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Shaman",
+    "colorHex": "0070DD",
+    "icon": "classicon_shaman",
+    "specs": [
+      {
+        "id": 262,
+        "name": "Elemental",
+        "role": "dps",
+        "icon": "spell_nature_lightning"
+      },
+      {
+        "id": 263,
+        "name": "Enhancement",
+        "role": "dps",
+        "icon": "spell_shaman_improvedstormstrike"
+      },
+      {
+        "id": 264,
+        "name": "Restoration",
+        "role": "healer",
+        "icon": "spell_nature_magicimmunity"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Mage",
+    "colorHex": "3FC7EB",
+    "icon": "classicon_mage",
+    "specs": [
+      {
+        "id": 62,
+        "name": "Arcane",
+        "role": "dps",
+        "icon": "spell_holy_magicalsentry"
+      },
+      {
+        "id": 63,
+        "name": "Fire",
+        "role": "dps",
+        "icon": "spell_fire_firebolt02"
+      },
+      {
+        "id": 64,
+        "name": "Frost",
+        "role": "dps",
+        "icon": "spell_frost_frostbolt02"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Warlock",
+    "colorHex": "8788EE",
+    "icon": "classicon_warlock",
+    "specs": [
+      {
+        "id": 265,
+        "name": "Affliction",
+        "role": "dps",
+        "icon": "spell_shadow_deathcoil"
+      },
+      {
+        "id": 266,
+        "name": "Demonology",
+        "role": "dps",
+        "icon": "spell_shadow_metamorphosis"
+      },
+      {
+        "id": 267,
+        "name": "Destruction",
+        "role": "dps",
+        "icon": "spell_shadow_rainoffire"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Monk",
+    "colorHex": "00FF98",
+    "icon": "classicon_monk",
+    "specs": [
+      {
+        "id": 268,
+        "name": "Brewmaster",
+        "role": "tank",
+        "icon": "spell_monk_brewmaster_spec"
+      },
+      {
+        "id": 270,
+        "name": "Mistweaver",
+        "role": "healer",
+        "icon": "spell_monk_mistweaver_spec"
+      },
+      {
+        "id": 269,
+        "name": "Windwalker",
+        "role": "dps",
+        "icon": "spell_monk_windwalker_spec"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Druid",
+    "colorHex": "FF7C0A",
+    "icon": "classicon_druid",
+    "specs": [
+      {
+        "id": 102,
+        "name": "Balance",
+        "role": "dps",
+        "icon": "spell_nature_starfall"
+      },
+      {
+        "id": 103,
+        "name": "Feral",
+        "role": "dps",
+        "icon": "ability_druid_catform"
+      },
+      {
+        "id": 104,
+        "name": "Guardian",
+        "role": "tank",
+        "icon": "ability_racial_bearform"
+      },
+      {
+        "id": 105,
+        "name": "Restoration",
+        "role": "healer",
+        "icon": "spell_nature_healingtouch"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Demon Hunter",
+    "colorHex": "A330C9",
+    "icon": "classicon_demonhunter",
+    "specs": [
+      {
+        "id": 577,
+        "name": "Havoc",
+        "role": "dps",
+        "icon": "ability_demonhunter_specdps"
+      },
+      {
+        "id": 581,
+        "name": "Vengeance",
+        "role": "tank",
+        "icon": "ability_demonhunter_spectank"
+      },
+      {
+        "id": 1480,
+        "name": "Devourer",
+        "role": "dps",
+        "icon": "classicon_demonhunter"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Evoker",
+    "colorHex": "33937F",
+    "icon": "classicon_evoker",
+    "specs": [
+      {
+        "id": 1467,
+        "name": "Devastation",
+        "role": "dps",
+        "icon": "classicon_evoker_devastation"
+      },
+      {
+        "id": 1468,
+        "name": "Preservation",
+        "role": "healer",
+        "icon": "classicon_evoker_preservation"
+      },
+      {
+        "id": 1473,
+        "name": "Augmentation",
+        "role": "dps",
+        "icon": "classicon_evoker_augmentation"
+      }
+    ]
+  }
+]
