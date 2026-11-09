@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 /// Errors shown to the user. Each case maps to a distinct UI state.
 nonisolated enum APIError: Error, Equatable, Sendable {
@@ -10,7 +11,8 @@ nonisolated enum APIError: Error, Equatable, Sendable {
     case decoding(String)
     case transport(String)
 
-    var title: String {
+    /// Localized via `Localizable.xcstrings`; resolved with the locale chosen in Settings.
+    var title: LocalizedStringKey {
         switch self {
         case .offline: "No internet connection"
         case .rateLimited: "Too many requests"
@@ -21,7 +23,7 @@ nonisolated enum APIError: Error, Equatable, Sendable {
         }
     }
 
-    var message: String {
+    var message: LocalizedStringKey {
         switch self {
         case .offline:
             "Check your connection and try again."
@@ -29,12 +31,14 @@ nonisolated enum APIError: Error, Equatable, Sendable {
             "Raider.IO is rate limiting requests. Wait a few seconds, then retry."
         case .notFound:
             "Raider.IO could not find this character."
-        case .server(let status, let message):
-            "Raider.IO returned HTTP \(status)" + (message.map { ": \($0)" } ?? ".")
+        case .server(let status, let message?):
+            "Raider.IO returned HTTP \(status): \(message)"
+        case .server(let status, nil):
+            "Raider.IO returned HTTP \(status)."
         case .decoding(let details):
             "The response could not be read. \(details)"
         case .transport(let details):
-            details
+            "\(details)"
         }
     }
 
@@ -49,10 +53,11 @@ nonisolated enum APIError: Error, Equatable, Sendable {
     }
 
     /// Errors that affect every request, so a multi-request load should stop instead of skipping one player.
+    /// `.transport` (e.g. a timeout) usually hits a single request, so that player is skipped instead.
     var abortsBatch: Bool {
         switch self {
-        case .offline, .rateLimited, .transport: true
-        case .notFound, .server, .decoding: false
+        case .offline, .rateLimited: true
+        case .transport, .notFound, .server, .decoding: false
         }
     }
 }

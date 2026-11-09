@@ -25,7 +25,7 @@ struct TopPlayersView: View {
                     }
                 }
                 .padding(.horizontal)
-                Text(footer)
+                footer
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                     .padding()
@@ -33,11 +33,11 @@ struct TopPlayersView: View {
         }
     }
 
-    private var footer: String {
-        let base = "Top \(result.players.count) \(selection.spec.name) \(selection.gameClass.name) players by Mythic+ score in \(region.title)."
-        return result.players.count < result.requestedCount
-            ? base + " The leaderboard has only \(result.players.count) this season."
-            : base
+    private var footer: Text {
+        let count = result.players.count
+        let base = Text("Top \(count) \(selection.spec.name) \(selection.gameClass.name) players by Mythic+ score in \(region.title).")
+        guard count < result.requestedCount else { return base }
+        return Text("\(base) \(Text("The leaderboard has only \(count) this season."))")
     }
 }
 

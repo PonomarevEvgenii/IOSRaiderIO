@@ -1,9 +1,11 @@
 import Foundation
 import Observation
+import SwiftUI
 
 /// Progress of a spec screen load, shown in the UI.
 struct LoadProgress: Equatable {
-    let message: String
+    /// Localized via `Localizable.xcstrings`.
+    let message: LocalizedStringKey
     let completed: Int
     let total: Int
 }
