@@ -82,7 +82,7 @@ struct PopularBuildView: View {
     @ViewBuilder
     private var treeStatus: some View {
         if let error = store.talentTreesError {
-            Label("Full talent trees unavailable (\(error.title)). Showing picked talents only.",
+            Label("Full talent trees unavailable (\(Text(error.title))). Showing picked talents only.",
                   systemImage: "exclamationmark.triangle")
                 .font(.footnote)
                 .padding()

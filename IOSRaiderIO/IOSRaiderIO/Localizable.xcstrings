@@ -1,15 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "· %@" : {
-
-    },
-    "/ %@" : {
-
-    },
-    "#%lld" : {
-
-    },
+    "· %@" : {},
+    "/ %@" : {},
+    "#%lld" : {},
     "%@ · %@" : {
       "localizations" : {
         "en" : {
@@ -26,6 +20,18 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$@ · top %2$lld players"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · nejlepší hráči (%2$lld)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · лучшие игроки (%2$lld)"
           }
         }
       }
@@ -51,14 +57,23 @@
       }
     },
     "%@, current screen" : {
-
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, aktuální obrazovka"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, текущий экран"
+          }
+        }
+      }
     },
-    "%lld" : {
-
-    },
-    "+%lld" : {
-
-    },
+    "%lld" : {},
+    "+%lld" : {},
     "Add to favorites" : {
       "localizations" : {
         "cs" : {
@@ -92,7 +107,20 @@
       }
     },
     "Back to %@" : {
-
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zpět na %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назад: %@"
+          }
+        }
+      }
     },
     "Best +%lld" : {
       "localizations" : {
@@ -255,7 +283,20 @@
       }
     },
     "Full talent trees unavailable (%@). Showing picked talents only." : {
-
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celé stromy talentů nejsou k dispozici (%@). Zobrazují se jen vybrané talenty."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полные деревья талантов недоступны (%@). Показаны только выбранные таланты."
+          }
+        }
+      }
     },
     "Hero talents" : {
       "localizations" : {
@@ -343,6 +384,18 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Most common exact build: %1$lld of %2$lld players"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nejčastější přesný build: %1$lld z %2$lld hráčů"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Самый частый точный билд: %1$lld из %2$lld игроков"
           }
         }
       }
@@ -523,9 +576,7 @@
         }
       }
     },
-    "RIO %@" : {
-
-    },
+    "RIO %@" : {},
     "Score %@" : {
       "localizations" : {
         "cs" : {
@@ -645,6 +696,18 @@
             "state" : "new",
             "value" : "The %1$@ Mythic+ leaderboard has no %2$@ %3$@ this season."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žebříček Mythic+ %1$@ nemá tuto sezónu žádné %2$@ %3$@."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В таблице лидеров Mythic+ %1$@ в этом сезоне нет %2$@ %3$@."
+          }
         }
       }
     },
@@ -670,6 +733,322 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "These are the character's current talents, which are for %1$@, not %2$@."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toto jsou aktuální talenty postavy, které jsou pro %1$@, ne pro %2$@."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это текущие таланты персонажа: они для %1$@, а не для %2$@."
+          }
+        }
+      }
+    },
+    "Check your connection and try again." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zkontrolujte připojení a zkuste to znovu."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверьте подключение и попробуйте ещё раз."
+          }
+        }
+      }
+    },
+    "Loading current season…" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Načítání aktuální sezóny…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка текущего сезона…"
+          }
+        }
+      }
+    },
+    "Loading talents (%lld of %lld players)…" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Načítání talentů (%1$lld z %2$lld hráčů)…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка талантов (%1$lld из %2$lld игроков)…"
+          }
+        }
+      }
+    },
+    "Loading talents…" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Načítání talentů…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка талантов…"
+          }
+        }
+      }
+    },
+    "Loading the %@ leaderboard…" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Načítání žebříčku %@…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка таблицы лидеров %@…"
+          }
+        }
+      }
+    },
+    "Network error" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chyba sítě"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка сети"
+          }
+        }
+      }
+    },
+    "No internet connection" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné připojení k internetu"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет подключения к интернету"
+          }
+        }
+      }
+    },
+    "Not found" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenalezeno"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не найдено"
+          }
+        }
+      }
+    },
+    "Raider.IO could not find this character." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO tuto postavu nenašel."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO не нашёл этого персонажа."
+          }
+        }
+      }
+    },
+    "Raider.IO is rate limiting requests. Wait a few seconds, then retry." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO omezuje počet požadavků. Počkejte pár sekund a zkuste to znovu."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO ограничивает количество запросов. Подождите несколько секунд и повторите."
+          }
+        }
+      }
+    },
+    "Raider.IO returned HTTP %lld." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO vrátil HTTP %lld."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO вернул HTTP %lld."
+          }
+        }
+      }
+    },
+    "Raider.IO returned HTTP %lld: %@" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO vrátil HTTP %1$lld: %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raider.IO вернул HTTP %1$lld: %2$@"
+          }
+        }
+      }
+    },
+    "Server error" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chyba serveru"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка сервера"
+          }
+        }
+      }
+    },
+    "Starting…" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spouštění…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запуск…"
+          }
+        }
+      }
+    },
+    "The leaderboard has only %lld this season." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V žebříčku jich je tuto sezónu jen %lld."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В этом сезоне в таблице лидеров их только %lld."
+          }
+        }
+      }
+    },
+    "The response could not be read. %@" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odpověď se nepodařilo přečíst. %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось прочитать ответ. %@"
+          }
+        }
+      }
+    },
+    "Too many requests" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Příliš mnoho požadavků"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слишком много запросов"
+          }
+        }
+      }
+    },
+    "Top %lld %@ %@ players by Mythic+ score in %@." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nejlepší hráči %2$@ %3$@ (%1$lld) podle Mythic+ skóre v regionu %4$@."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лучшие игроки %2$@ %3$@ (%1$lld) по рейтингу Mythic+ в регионе %4$@."
+          }
+        }
+      }
+    },
+    "Unexpected data" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neočekávaná data"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неожиданные данные"
           }
         }
       }

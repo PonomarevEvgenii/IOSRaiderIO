@@ -1,14 +1,19 @@
 import Foundation
 @testable import IOSRaiderIO
 
-/// Anchor for locating the test bundle (which contains the Fixtures folder).
+/// Anchor for locating the test bundle (which contains the test-only fixtures).
 final class TestBundleToken {}
 
 enum TestFixtures {
-    static let bundle = Bundle(for: TestBundleToken.self)
+    /// Test-only fixtures, e.g. `fixture_profile_not_found.json`.
+    static let testBundle = Bundle(for: TestBundleToken.self)
+    /// The app bundle (tests run inside the host app). The shared fixtures live once,
+    /// in the app's `PreviewFixtures` folder, and are used by both previews and tests.
+    static let appBundle = Bundle(for: BuildStore.self)
 
     static func data(_ name: String) throws -> Data {
-        guard let url = bundle.url(forResource: name, withExtension: "json") else {
+        guard let url = testBundle.url(forResource: name, withExtension: "json")
+                ?? appBundle.url(forResource: name, withExtension: "json") else {
             throw APIError.decoding("Missing test fixture \(name).json")
         }
         return try Data(contentsOf: url)
@@ -19,7 +24,7 @@ enum TestFixtures {
     }
 
     static func client() throws -> FixtureRaiderIOClient {
-        try FixtureRaiderIOClient(bundle: bundle)
+        try FixtureRaiderIOClient(bundle: appBundle)
     }
 }
 
