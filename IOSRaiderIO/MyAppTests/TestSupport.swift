@@ -1,5 +1,5 @@
 import Foundation
-@testable import MyApp
+@testable import IOSRaiderIO
 
 /// Anchor for locating the test bundle (which contains the Fixtures folder).
 final class TestBundleToken {}

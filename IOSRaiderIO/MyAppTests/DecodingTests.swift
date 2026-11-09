@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import MyApp
+@testable import IOSRaiderIO
 
 /// Decodes every saved real Raider.IO response and the bundled classes.json.
 struct DecodingTests {

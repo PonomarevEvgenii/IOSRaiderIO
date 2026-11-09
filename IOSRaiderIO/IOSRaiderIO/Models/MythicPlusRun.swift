@@ -8,6 +8,29 @@ nonisolated struct SpecRankingsResponse: Decodable, Sendable {
 
 nonisolated struct SpecRankings: Decodable, Sendable {
     let rankedCharacters: [RankedCharacter]
+
+    enum CodingKeys: String, CodingKey {
+        case rankedCharacters
+    }
+
+    init(rankedCharacters: [RankedCharacter]) {
+        self.rankedCharacters = rankedCharacters
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        // Skip malformed entries (e.g. missing ids) instead of failing the whole leaderboard.
+        rankedCharacters = try container.decode([LossyRankedCharacter].self, forKey: .rankedCharacters)
+            .compactMap(\.value)
+    }
+
+    private struct LossyRankedCharacter: Decodable {
+        let value: RankedCharacter?
+
+        init(from decoder: Decoder) throws {
+            value = try? RankedCharacter(from: decoder)
+        }
+    }
 }
 
 nonisolated struct RankedCharacter: Decodable, Sendable {
@@ -39,7 +62,7 @@ nonisolated struct RankedRun: Decodable, Sendable {
 }
 
 nonisolated struct RosterCharacter: Decodable, Sendable {
-    let id: Int
+    let id: Int?
     let name: String
     let characterClass: NamedReference
     let spec: NamedReference?

@@ -1,5 +1,5 @@
 import Testing
-@testable import MyApp
+@testable import IOSRaiderIO
 
 struct PickRateTests {
     @Test func zeroPlayersHasNoRatesAndNoNaN() {

@@ -6,6 +6,16 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		D60D1AF0309890E200C39D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000100000000;
+			remoteInfo = IOSRaiderIO;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* IOSRaiderIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSRaiderIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60D1AB9309890E200C39D04 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +110,9 @@
 			);
 			buildRules = (
 			);
+			dependencies = (
+				D60D1AF1309890E200C39D04 /* PBXTargetDependency */,
+			);
 			fileSystemSynchronizedGroups = (
 				D60D1ABA309890E200C39D04 /* MyAppTests */,
 			);
@@ -123,6 +136,7 @@
 					};
 					D60D1AB8309890E200C39D04 = {
 						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 000000000000000100000000;
 					};
 				};
 			};
@@ -171,6 +185,14 @@
 			);
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D60D1AF1309890E200C39D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000100000000 /* IOSRaiderIO */;
+			targetProxy = D60D1AF0309890E200C39D04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000011000000 /* Debug configuration for PBXProject "IOSRaiderIO" */ = {
@@ -315,7 +337,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = IOSRaiderIO/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -355,7 +377,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = IOSRaiderIO/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -397,7 +419,7 @@
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"\"$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp.debug.dylib\"",
+					"\"$(BUILT_PRODUCTS_DIR)/IOSRaiderIO.app/IOSRaiderIO.debug.dylib\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.MyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,7 +431,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSRaiderIO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IOSRaiderIO";
 				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
 			name = Debug;
@@ -426,7 +448,7 @@
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"\"$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp.debug.dylib\"",
+					"\"$(BUILT_PRODUCTS_DIR)/IOSRaiderIO.app/IOSRaiderIO.debug.dylib\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.MyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,7 +460,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSRaiderIO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IOSRaiderIO";
 				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
 			name = Release;
